@@ -2,7 +2,7 @@
   "name": "nuxt-pwa-sample",
   "version": "1.0.0",
   "description": "Nuxt.js project",
-  "author": "knymssh <m_k2006jp@yahoo.co.jp>",
+  "author": "knymssh",
   "private": true,
   "scripts": {
     "dev": "nuxt",
