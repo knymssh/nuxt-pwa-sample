@@ -96,4 +96,5 @@ typings/
 # DynamoDB Local files
 .dynamodb/
 
-
+# ServiceWorker
+sw.*

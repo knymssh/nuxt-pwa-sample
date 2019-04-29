@@ -34,6 +34,23 @@ module.exports = {
         })
       }
     }
+  },
+  modules: [
+    '@nuxtjs/pwa'
+  ],
+  manifest: {
+    name: 'nuxt-pwa-sample',
+    lang: 'ja',
+    short_name: 'nuxt',
+    title: 'nuxt-pwa-sample',
+    'og:title': 'nuxt-pwa-sample',
+    description: 'nuxt-pwa-sample',
+    'og:description': 'nuxt-pwa-sample',
+    theme_color: '#ffffff',
+    background_color: '#ffffff'
+  },
+  workbox: {
+    dev: true
   }
 }
 
