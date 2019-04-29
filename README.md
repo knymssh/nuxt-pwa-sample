@@ -48,3 +48,12 @@ $ npm run generate
 
 For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
 
+``` bash
+# upgrade eslint
+$ npm install -g npm-check-updates
+$ ncu -u eslint eslint-loader eslint-plugin-vue
+
+# install prettier packages
+$ npm install -D prettier
+$ npm install -D eslint eslint-config-prettier eslint-plugin-prettier
+```
