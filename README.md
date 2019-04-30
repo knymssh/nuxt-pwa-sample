@@ -107,3 +107,18 @@ $ npm install -D @nuxtjs/style-resources
       ]
   },
 ```
+
+### dotengv
+
+``` bash
+$ npm i @nuxtjs/dotenv
+```
+
+#### Modify nuxt.config.js
+``` js
+  modules: [
+    '@nuxtjs/pwa',
+    '@nuxtjs/style-resources',
+    '@nuxtjs/dotenv'
+  ],
+```
