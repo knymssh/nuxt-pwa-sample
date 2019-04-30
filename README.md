@@ -48,6 +48,8 @@ $ npm run generate
 
 For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
 
+### prettier
+
 ``` bash
 # upgrade eslint
 $ npm install -g npm-check-updates
@@ -58,10 +60,12 @@ $ npm install -D prettier
 $ npm install -D eslint eslint-config-prettier eslint-plugin-prettier
 ```
 
+### PWA
+
 ``` bash
 $ npm install -D @nuxtjs/pwa
 ```
-# Modify nuxt.config.js
+#### Modify nuxt.config.js
 ``` js
   modules: [
     '@nuxtjs/pwa'
@@ -80,4 +84,26 @@ $ npm install -D @nuxtjs/pwa
   workbox: {
     dev: true
   }
+```
+
+### SASS
+
+``` bash
+$ npm install -D node-sass sass-loader
+$ npm install -D @nuxtjs/style-resources
+```
+
+#### Modify nuxt.config.js
+``` js
+  modules: [
+    '@nuxtjs/pwa',
+    '@nuxtjs/style-resources'
+  ],
+  styleResources: {
+    scss: [
+      './assets/style/vars/*.scss',
+      './assets/style/abstracts/_mixins.scss',
+      './assets/style/abstracts/_variables.scss'
+      ]
+  },
 ```

@@ -36,8 +36,16 @@ module.exports = {
     }
   },
   modules: [
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    '@nuxtjs/style-resources'
   ],
+  styleResources: {
+    scss: [
+      './assets/style/vars/*.scss',
+      './assets/style/abstracts/_mixins.scss',
+      './assets/style/abstracts/_variables.scss'
+      ]
+  },
   manifest: {
     name: 'nuxt-pwa-sample',
     lang: 'ja',
