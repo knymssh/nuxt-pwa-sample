@@ -59,6 +59,7 @@ module.exports = {
       './assets/style/abstracts/_variables.scss',
     ],
   },
+  css: [{ src: '~/assets/style/vars/common.scss', lang: 'scss' }],
   manifest: {
     name: 'nuxt-pwa-sample',
     short_name: 'nuxt-pwa',
