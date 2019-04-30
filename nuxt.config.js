@@ -49,14 +49,15 @@ module.exports = {
   },
   manifest: {
     name: 'nuxt-pwa-sample',
+    short_name: 'nuxt-pwa',
+    description: "nuxt pwa sample",
     lang: 'ja',
-    short_name: 'nuxt',
-    title: 'nuxt-pwa-sample',
-    'og:title': 'nuxt-pwa-sample',
-    description: 'nuxt-pwa-sample',
-    'og:description': 'nuxt-pwa-sample',
     theme_color: '#ffffff',
-    background_color: '#ffffff'
+    background_color: '#ffffff',
+    display: "standalone",
+    orientation: "portrait",
+    scope: "/",
+    start_url: "/"
   },
   workbox: {
     dev: true
