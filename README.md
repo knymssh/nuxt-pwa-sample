@@ -122,3 +122,30 @@ $ npm i @nuxtjs/dotenv
     '@nuxtjs/dotenv'
   ],
 ```
+
+### vue2-google-maps
+
+``` bash
+$ npm i vue2-google-maps
+```
+
+``` js
+  build: {
+    extend(config, { isDev, isClient }) {
+      ...
+      config.externals = config.externals || [];
+      if (!isClient) {
+        config.externals.splice(0, 0, function(context, request, callback) {
+          if (/^vue2-google-maps($|\/)/.test(request)) {
+            callback(null, false);
+          } else {
+            callback();
+          }
+        });
+      }
+    },
+  },
+
+  plugins: [{ src: '~plugins/vue2-google-maps.js', ssr: false }],
+  vendor: ['vue2-google-maps'],
+```
