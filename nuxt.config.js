@@ -49,9 +49,17 @@ module.exports = {
   env: {
     GOOGLE_MAPS_API_KEY,
   },
-  modules: ['@nuxtjs/pwa', '@nuxtjs/style-resources', '@nuxtjs/dotenv'],
-  plugins: [{ src: '~plugins/vue2-google-maps.js', ssr: false }],
-  vendor: ['vue2-google-maps'],
+  modules: [
+    '@nuxtjs/pwa',
+    '@nuxtjs/style-resources',
+    '@nuxtjs/dotenv'
+  ],
+  plugins: [
+    { src: '~plugins/vue2-google-maps.js', ssr: false }
+  ],
+  vendor: [
+    'vue2-google-maps'
+  ],
   styleResources: {
     scss: [
       './assets/style/vars/*.scss',
@@ -59,7 +67,9 @@ module.exports = {
       './assets/style/abstracts/_variables.scss',
     ],
   },
-  css: [{ src: '~/assets/style/vars/common.scss', lang: 'scss' }],
+  css: [
+    { src: '~/assets/style/vars/common.scss', lang: 'scss' }
+  ],
   manifest: {
     name: 'nuxt-pwa-sample',
     short_name: 'nuxt-pwa',
