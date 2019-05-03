@@ -8,6 +8,10 @@
       <h2 class="subtitle">
         Nuxt.js project
       </h2>
+      <div>
+        <nuxt-link to="/map" no-prefetch>Google Map Sample</nuxt-link>
+        <nuxt-link to="/map/current" no-prefetch>Google Map Sample (current)</nuxt-link>
+      </div>
       <div class="links">
         <a href="https://nuxtjs.org/" target="_blank" class="button--green"
           >Documentation</a
