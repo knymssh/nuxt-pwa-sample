@@ -11,6 +11,7 @@
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
+    "stylelint": "stylelint \"assets/**/*.scss\"",
     "precommit": "npm run lint"
   },
   "dependencies": {
@@ -30,6 +31,11 @@
     "eslint-plugin-vue": "^5.2.2",
     "node-sass": "^4.12.0",
     "prettier": "^1.17.0",
-    "sass-loader": "^7.1.0"
+    "sass-loader": "^7.1.0",
+    "stylelint": "^10.0.1",
+    "stylelint-config-prettier": "^5.1.0",
+    "stylelint-config-recommended": "^2.2.0",
+    "stylelint-prettier": "^1.0.6",
+    "stylelint-scss": "^3.6.1"
   }
 }
