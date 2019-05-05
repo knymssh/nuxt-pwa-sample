@@ -1,0 +1,8 @@
+assets/vendor/**
+static/**
+node_modules
+.nuxt
+dist
+.gitignore
+.firebase
+nuxt.config.js
