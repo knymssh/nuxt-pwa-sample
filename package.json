@@ -11,7 +11,8 @@
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
-    "stylelint": "stylelint \"assets/**/*.scss\"",
+    "stylelint": "stylelint --syntax scss assets/style/**/*.scss",
+    "stylelintfix": "stylelint --syntax scss --fix assets/style/**/*.scss",
     "precommit": "npm run lint"
   },
   "dependencies": {
