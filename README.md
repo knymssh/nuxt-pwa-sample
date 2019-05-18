@@ -157,3 +157,22 @@ $ npm install -D stylelint stylelint-config-recommended stylelint-scss stylelint
 ``` bash
 $ stylelint --syntax scss assets/style/**/*.scss
 ```
+
+## Deploy webapp to firebase
+
+### Install firebase-tools
+``` bash
+$ npm install -g firebase-tools
+$ firebase login
+```
+
+### Deploy webapp to firebase
+``` bash
+$ firebase init
+$ firebase deploy
+```
+
+### Run webapp locally
+``` bash
+$ firebase serve --only hosting
+```
