@@ -146,3 +146,14 @@ $ npm i vue2-google-maps
   plugins: [{ src: '~plugins/vue2-google-maps.js', ssr: false }],
   vendor: ['vue2-google-maps'],
 ```
+
+### stylelint
+
+``` bash
+$ npm install -g stylelint
+$ npm install -D stylelint stylelint-config-recommended stylelint-scss stylelint-prettier stylelint-config-prettier
+```
+
+``` bash
+$ stylelint --syntax scss assets/style/**/*.scss
+```
