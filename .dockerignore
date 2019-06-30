@@ -1,0 +1,4 @@
+.firebase
+.nuxt
+node_modules
+dist

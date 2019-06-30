@@ -166,9 +166,14 @@ $ npm install -g firebase-tools
 $ firebase login
 ```
 
-### Deploy webapp to firebase
+### Init setting
 ``` bash
 $ firebase init
+$ firebase use default
+```
+
+### Deploy webapp
+``` bash
 $ firebase deploy
 ```
 

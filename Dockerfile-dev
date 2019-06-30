@@ -1,19 +1,17 @@
-FROM node:10.15.3-alpine as builder
+FROM node:10.15.3-alpine
+
+RUN npm install -g http-server
 
 WORKDIR /app
 
 COPY package*.json ./
+
 RUN npm install --no-progress
 
-COPY . ./
+COPY . .
+
+#RUN npm run build
 RUN npm run generate
-
-
-FROM node:10.15.3-alpine as runner
-
-RUN npm install -g http-server
-
-COPY --from=builder /app/dist /
 
 EXPOSE 8080
 CMD [ "http-server", "dist" ]
